@@ -18,7 +18,7 @@ export default function ExampleV2({setIsLoggedIn}) {
     },[]);
 
     const registerUser = async()=>{
-            let resp = await axios.post("http://backend.qrauthdemo.amzi.top/createUser",{mobileNumber:user,password:pass},{headers:{Authorization:"bearer "+ sessionStorage.getItem('user')}}).catch(err=>console.log(err));
+            let resp = await axios.post("https://backend.qrauthdemo.amzi.top/createUser",{mobileNumber:user,password:pass},{headers:{Authorization:"bearer "+ sessionStorage.getItem('user')}}).catch(err=>console.log(err));
             console.log('resp',resp);
             if(resp ){
                 toast.success('User Created');

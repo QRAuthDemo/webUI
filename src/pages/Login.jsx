@@ -8,7 +8,7 @@ export default function ExampleV2({setIsLoggedIn}) {
     const [user,setUsername] = useState();
     const [pass,setPassword] = useState();
     const loginUser = async()=>{
-            let resp = await axios.post("http://backend.qrauthdemo.amzi.top/login",{mobileNumber:user,password:pass}).catch(err=>console.log(err));
+            let resp = await axios.post("https://backend.qrauthdemo.amzi.top/login",{mobileNumber:user,password:pass}).catch(err=>console.log(err));
             console.log('resp',resp);
             if(resp ){
                 toast.success('Login successful');
