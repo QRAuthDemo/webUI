@@ -78,7 +78,7 @@ export default function ExampleV2({setIsLoggedIn}) {
 
                       {/* <!--Register button--> */}
                       <div className="flex items-center justify-between pb-6">
-                        <p className="mb-0 mr-2">Dont have an account?</p>
+                        {/* <p className="mb-0 mr-2">Dont have an account?</p> */}
                         {/* <TERipple rippleColor="light">
                           <button
                             type="button"
